@@ -10,5 +10,9 @@ function updateRandomNumber() {
         });
 }
 
+// Call the function manually at the very beginning, because
+// setInterval will call it after 5000ms for the first time
 updateRandomNumber();
+
+// Calls the updateRandomNumber function every 5000 ms
 setInterval(updateRandomNumber, 5000);
